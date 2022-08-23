@@ -6,7 +6,8 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "allowJs": false,
+    "noImplicitAny": false,
     "skipLibCheck": true,
     "strict": true,
     "strictPropertyInitialization": false,
@@ -23,6 +24,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
+    "svg.d.ts",
     "**/*.tsx"
   ],
   "exclude": [

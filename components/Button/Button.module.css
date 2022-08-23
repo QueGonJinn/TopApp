@@ -3,9 +3,6 @@
 
 	box-sizing: border-box;
 
-	width: 148px;
-	height: 35px;
-
 	padding: 10px;
 
 	cursor: pointer;
@@ -23,6 +20,7 @@
 .primary {
 	color: var(--white);
 
+	border: 2px solid var(none);
 	background-color: var(--primary);
 }
 
@@ -33,7 +31,7 @@
 .ghost {
 	color: var(--black);
 
-	border: 1px solid var(--grey-light);
+	border: 2px solid var(--grey-light);
 	background: none;
 }
 
@@ -41,4 +39,15 @@
 	color: var(--white);
 
 	background-color: var(--primary-hover);
+}
+
+.arrow {
+	display: inline-block;
+
+	margin-left: 10px;
+}
+
+.down {
+	transition: all 0.2s;
+	transform: rotate(90deg);
 }
