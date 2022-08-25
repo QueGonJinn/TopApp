@@ -1,11 +1,13 @@
-import React from 'react';
-import { Htag, Button, Ptag, Tag } from '../components';
+import React, {useState} from 'react';
+import { Htag, Button, Ptag, Tag, Rating } from '../components';
 
-export default function Home(): JSX.Element {
-	return (
+export default function Home(): JSX.Element {	
 	
+	const [rating, setRating] = useState<number>(4);
+	
+	return (		
 		<>
-			<Htag tag='h1'>Text</Htag>
+			<Htag tag='h1'>767</Htag>
 			<Htag tag='h2'>Text2</Htag>
 			<Button appearance='primary'>Кнопка</Button>
 			<Button appearance='ghost' arrow='down'>Кнопка</Button>
@@ -17,6 +19,7 @@ export default function Home(): JSX.Element {
 			<Tag color='gray'>Hello</Tag>
 			<Tag color='green'>Hello</Tag>
 			<Tag color='primary' href='#'>Hello</Tag>
+			<Rating rating={rating} isEditable setRating={setRating}/>
 		</>
 	);
 }
