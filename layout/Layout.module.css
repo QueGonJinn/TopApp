@@ -6,9 +6,9 @@
 	min-height: 100vh;
 
 	grid-template-areas:
-		". header header ."
-		". sidebar main ."
-		"footer footer footer footer";
+		'. header header .'
+		'. sidebar main .'
+		'footer footer footer footer';
 }
 
 .header {
@@ -29,13 +29,12 @@
 }
 
 @media (max-width: 765px) {
-
 	.wrapper {
-		grid-template-columns:minmax(320px, 1fr);
+		grid-template-columns: minmax(320px, 1fr);
 		grid-template-areas:
-			"header"
-			"main"
-			"footer";
+			'header'
+			'main'
+			'footer';
 	}
 
 	.sidebar {
